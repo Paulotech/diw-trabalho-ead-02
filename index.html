@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta charset="utf-8">  
+    <title>Formulario</title>
+  </head>
+  <body>
+      <h1>Formulário de Cadastro</h1>
+
+    <form action="test.php" method="post">
+        <p>
+            Nome Completo:  <input type="text" name="name"
+                            placeholder="Nome Completo"
+                            required="true">                
+        </p>
+        <p>
+          E-mail:
+          <input type="email" name="email" placeholder="exemplo@email.com" >
+        </p> 
+        <p>
+          Sexo:
+          <input type="radio" name="sex" id="masculino" value="masculino"> 
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="sex" id="feminino" value="feminino"> 
+          <label for="feminino">Feminino</label>
+        </p>
+        <p>
+          Data de Nascimento:
+          <input type="text" name="dia" size="2" maxlength="2" placeholder="dd" > 
+          <input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+          <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+        </p>
+        <p>
+          Grau de Escolaridade:
+          <select name="escolaridade" id="grau">
+            <option value="Ensino Médio">Ensino Médio</option>
+            <option selected value="Superior completo" >Superior completo</option>
+            <option value="Pós-Graduação">Pós-Graduação</option>
+            <option value="Mestrado">Mestrado</option>
+            <option value="Doutorado">Doutorado</option>
+          </select>
+        </p>
+        <p>
+          Estilos musicais preferídos:
+          <select multiple name="lista" size="5">
+            <option selected value="Rock">Rock</option>
+            <option value="Funk">Funk</option>
+            <option value="Samba">Samba</option>
+            <option value="Pagode">Pagode</option>
+            <option selected value="Pop">Pop</option>
+          </select>
+        </p>
+        <p>
+          Nome do Usuário:
+          <input type="text" name="user">
+        </p>
+        <p>
+          Senha:
+          <input type="password" name="password">
+        </p>
+          Cor preferída:
+          <input type="color" name="color">
+        <p>
+        <p>
+          Quantidade de Filhos:
+          <input type="namber" name="filhos">
+        </p>
+        <p>
+          Quantidade de Veiculos: 0
+          <input type="range"  maxlength="5" minlength="1" >5
+        </p>
+        <p>
+          Comentário:
+
+          <br>
+          <textarea name="comentario" cols="15" rows="5"></textarea></textarea>
+        </p>
+        <p>
+          <input type="radio" name="desejo" id="desejo">
+          <label for="desejo">Desejo receber ofertas via e-mail</label>
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+  </body>
+</html>
